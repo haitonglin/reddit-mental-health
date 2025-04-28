@@ -27,6 +27,8 @@ conda activate reddit_env
 
 ## Methodology
 
+- **EDA**:  
+  - Preprocessing, data cleaning, initial inspection on raw data
 - **Baseline Clustering**:  
   - Applied TF-IDF + KMeans clustering to estimate a reasonable number of topics
 - **Latent Dirichlet Allocation (LDA)**:
