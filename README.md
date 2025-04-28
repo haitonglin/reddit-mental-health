@@ -4,7 +4,6 @@
 ```
 conda env create -f environment.yml -n reddit_env
 conda activate reddit_env
-pip install pyLDAvis
 ```
 
 ## Project Structure
