@@ -2,10 +2,9 @@
 
 ## Setup
 ```
-conda env create -f environment.yml
+conda env create -f environment.yml -n reddit_env
 conda activate reddit_env
-# Not available via conda
-pip install pyLDAvis seaborn
+pip install pyLDAvis
 ```
 
 ## Project Structure
