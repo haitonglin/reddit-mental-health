@@ -1,4 +1,4 @@
-# Better Labeling of Reddit Mental Health Posts Using Clustering
+# Better Labeling of Reddit Mental Health Posts: Analysis with Clustering, Topic Modeling and Human Interpretation
 
 ## Setup
 ```
