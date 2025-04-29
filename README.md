@@ -11,7 +11,7 @@ conda activate reddit_env
 | File/Folder | Description |
 |:---|:---|
 | `eda.ipynb` | Exploratory Data Analysis (EDA) of the raw Reddit posts. Preprocessing, data cleaning, initial inspection |
-| `clustering.ipynb` | Clustering and Topic Modeling pipeline: TF-IDF + KMeans baseline, LDA modeling, topic interpretation, label assignment |
+| `main.ipynb` | Clustering and Topic Modeling pipeline: TF-IDF + KMeans baseline, LDA modeling, topic interpretation, label assignment |
 | `eda_visualizations/` | Folder containing visualization outputs from EDA (plots, charts, distributions) |
 | `data_utils.py` | Utility functions for loading, cleaning, and preprocessing the Reddit dataset |
 | `lda_hyperparams_tuning.py` | (Optional script) Manual grid search code for tuning LDA hyperparameters (not used in final pipeline due to runtime) |
