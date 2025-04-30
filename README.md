@@ -14,7 +14,7 @@ conda activate reddit_env
 | `main.ipynb` | Clustering and Topic Modeling pipeline: TF-IDF + KMeans baseline, LDA modeling, topic interpretation, label assignment |
 | `data_utils.py` | Utility functions for loading, cleaning, and preprocessing the Reddit dataset |
 | `lda_hyperparams_tuning.py` | (Optional script) Manual grid search code for tuning LDA hyperparameters (not used in final pipeline due to runtime) |
-| `processed_data.csv` | Dataset after preprocessing (remove stopwords, lowercase, etc) |
+| `processed_data.csv` | Dataset after preprocessing (removed in this repo because file was too big but will be here if you re-run) |
 | `labeled_data.csv` | Final dataset with human-interpretable topic labels attached to each Reddit post |
 | `eda_visualizations/` | Folder containing visualization outputs from EDA (plots, charts, distributions) |
 | `results_visualizations/` | Folder containing visualizations from the last part of main.ipynb |
