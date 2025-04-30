@@ -27,6 +27,7 @@ def load_data(path):
     df = df[~df['body'].isin(['[removed]', '[deleted]'])].reset_index(drop=True)
     return df
 
+# backup
 def split_data(df, test_size=0.2, val_size=0.1, random_state=42):
     train_df, temp_df = train_test_split(df, test_size=(test_size + val_size), random_state=random_state)
     val_df, test_df = train_test_split(temp_df, test_size=test_size/(test_size + val_size), random_state=random_state)

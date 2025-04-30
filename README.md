@@ -12,10 +12,13 @@ conda activate reddit_env
 |:---|:---|
 | `eda.ipynb` | Exploratory Data Analysis (EDA) of the raw Reddit posts. Preprocessing, data cleaning, initial inspection |
 | `main.ipynb` | Clustering and Topic Modeling pipeline: TF-IDF + KMeans baseline, LDA modeling, topic interpretation, label assignment |
-| `eda_visualizations/` | Folder containing visualization outputs from EDA (plots, charts, distributions) |
 | `data_utils.py` | Utility functions for loading, cleaning, and preprocessing the Reddit dataset |
 | `lda_hyperparams_tuning.py` | (Optional script) Manual grid search code for tuning LDA hyperparameters (not used in final pipeline due to runtime) |
+| `processed_data.csv` | Dataset after preprocessing (remove stopwords, lowercase, etc) |
 | `labeled_data.csv` | Final dataset with human-interpretable topic labels attached to each Reddit post |
+| `eda_visualizations/` | Folder containing visualization outputs from EDA (plots, charts, distributions) |
+| `results_visualizations/` | Folder containing visualizations from the last part of main.ipynb |
+| `lda_vis.html` | Web file containing LDA topic modeling visualization |
 | `environment.yml` | Conda environment specification for dependencies (Python version, libraries) |
 
 ## Research Question
@@ -43,16 +46,16 @@ conda activate reddit_env
 ## Key Results
 
 - Successfully identified major mental health themes/labels:
-  - Daily Life Challenges (Environment and Activities)
-  - General Emotional Struggles and Reflections
-  - Daily Life Challenges (Work, Sleep, Routine)
-  - Personal Emotional Distress
-  - ADHD and Academic Challenges
-  - Timeline Narratives (Job, Life Changes)
-  - PTSD and Trauma Experiences
-  - Social Interaction Challenges
-  - Medication Management (ADHD/Anxiety)
-  - OCD and Intrusive Thoughts
+  - 0: "Physical/Sexual Trauma",
+  - 1: "Sleep Disruption & Panic Symptons",
+  - 2: "Work Avoidance and Exhaustion",
+  - 3: "Identity and Emotional Denial",
+  - 4: "Flashbacks & Avoidance Behaviors",
+  - 5: "General Emotional Struggle",
+  - 6: "OCD & Intrusive Thoughts",
+  - 7: "PTSD Diagnosis & Mental Health Services",
+  - 8: "Medication & Psychiatric Care",
+  - 9: "Family & Developmental History"
 
 - Produced a **new labeled dataset** with over 60,000 posts, improving over subreddit-based categorization
 - Enables future research such as:
