@@ -57,7 +57,7 @@ conda activate reddit_env
   - 8: "Medication & Psychiatric Care",
   - 9: "Family & Developmental History"
 
-- Produced a **new labeled dataset** with over 60,000 posts, improving over subreddit-based categorization
+- Produced a **new labeled dataset** with over 80,000 posts, improving over subreddit-based categorization
 - Enables future research such as:
   - Supervised classification models
   - Monitoring trends in mental health discussions
@@ -66,5 +66,5 @@ conda activate reddit_env
 ## Discussion
 
 - Originally, classification/self-supervised learning was considered as a next step
-- However, the LDA clustering and human labeling process are suffient for the research question
+- However, the LDA clustering and human labeling process are sufficient for the research question
 - And it would not make sense to predict the labels I just created
